@@ -3,7 +3,7 @@ require 'open-uri'
 class GamesController < ApplicationController
   def new
     array = ('A'..'Z').to_a
-    @letters = 10.times.map { array.sample }.to_s.gsub('"', '')
+    @letters = 10.times.map { array.sample }
   end
 
   def score
